@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "common.css" screen;
+@import "header.css" screen;
+@import "sidebar.css" screen;
+@import "main.css" screen;
+@import "cards.css" screen;
+@import "footer.css" screen;
+
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamProLight.eot');
+    src: local('вє'), url('../fonts/GothamProLight.woff') format('woff'), url('../fonts/GothamProLight.ttf') format('truetype'), url('../fonts/GothamProLight.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamProLightItalic.eot');
+    src: local('вє'), url('../fonts/GothamProLightItalic.woff') format('woff'), url('../fonts/GothamProLightItalic.ttf') format('truetype'), url('../fonts/GothamProLightItalic.svg') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamProRegular.eot');
+    src: local('вє'), url('../fonts/GothamProRegular.woff') format('woff'), url('../fonts/GothamProRegular.ttf') format('truetype'), url('../fonts/GothamProRegular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamProMedium.eot');
+    src: local('вє'), url('../fonts/GothamProMedium.woff') format('woff'), url('../fonts/GothamProMedium.ttf') format('truetype'), url('../fonts/GothamProMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src: url('../fonts/GothamProBold.eot');
+    src: local('вє'), url('../fonts/GothamProBold.woff') format('woff'), url('../fonts/GothamProBold.ttf') format('truetype'), url('../fonts/GothamProBold.svg') format('svg');
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*RESET CSS*/
+
+    /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+    ! MODIFIED !
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1.5;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        object-fit: cover;
+    }
+    button{
+        outline: none;
+    }
+    /* Remove outline on the forms and links */
+    :active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+    /* Set basic parameters */
+    html, body {
+        font-family: "GothamPro", "Roboto", Arial, sans-serif;
+        color: #333;
+        /*font-weight: 300;*/
+        font-size: 18px;
+        background-color: #eee;
+    }

@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+    .footer {
+        background-color: #13825f;
+        color: #fff;
+        display: block;
+        /*width: 100vw;*/
+        font-size: 15px;
+        z-index: 999;
+        padding: 30px 20px 40px 0;
+    }
+    .social__item_inversed-colours circle {
+        fill: #fff;
+    }
+    .social__item_inversed-colours path {
+        fill: #13825F;
+    }
+    .social__item_inversed-colours:hover .social__item__icon circle {
+        fill: #84f8c4;
+    }
+    .footer__content {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .left-column {
+        width: 23%;
+        margin-rigth: 2%;
+        flex-basis: 23%;
+    }
+    .right-column {
+        width: 70%;
+        flex-basis: 70%;
+    }
+    .last-row {
+        margin-top: 30px;
+    }
+    .counters {
+        align-self: flex-end;
+    }
+    .text p{
+        margin-top: 0.5em;
+    }
+    .links {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+    }
+    .links_no-gap {
+        margin-top: 0;
+    }
+    .links__item {
+        margin-right: 20px;
+    }
+    .link {
+        color: #fff;
+        border-bottom: 1px solid #ffffff66;
+    }
+    .link:hover {
+        color: #84f8c4;
+        border-bottom: 1px solid #84f8c4;
+    }
+    .age-restrictions_small-badge {
+        display: inline-block;
+        margin: 0 10px;
+        width: 20px;
+        height: 18px;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #13825f;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .footer .social {
+        margin-top: 20px;
+    }

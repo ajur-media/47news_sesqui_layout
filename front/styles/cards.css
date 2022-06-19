@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+    .newslist__item {
+        display: block;
+        position: relative;
+        width: 32%;
+        /*flex-basis: 1;*/
+        margin-right: 1%;
+        background-color: #fff;
+        border: solid 1px #dad9d9;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+    .newslist__item:hover {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-color: #8c3b52;
+    }
+    .newslist__item:hover .newslist__item_label {
+        color: #8c3b52;
+        background-color: #fff;
+    }
+    .newslist__item:hover .newslist__item_title {
+        color: #8c3b52;
+    }
+    .newslist__item:hover .newslist__item_image {
+        filter: sepia(100%) hue-rotate(270deg) brightness(0.8) saturate(1.15);
+    }
+    .newslist__item_label {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 8px 9px 7px 9px;
+        color: #fff;
+        background-color: #3bae7c;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 3px;
+    }
+    .newslist__item_content {
+        padding: 10px 20px 50px;
+    }
+    .newslist__item_title {
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #13825f;
+        margin: 0 0 20px 0;
+        /*font-weight: 500;*/
+    }
+    .newslist__item_image {
+        height: 200px;
+        width: 300px;
+    }
+    .newslist__ad {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        flex-grow: 2;
+        flex-basis: 100%;
+        text-align: center;
+        max-height: 100px;
+    }
+    .newslist__loadmore-wrapper {
+        flex-grow: 2;
+        flex-basis: 100%;
+        text-align: center;
+        height: 70px;
+    }
+    .newslist__loadmore-button:hover {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+/*------------------------------------*\
+    # BREAKPOINTS
+\*------------------------------------*/
+@media screen and (max-width: 960px) {
+    .newslist__item {
+        /*width: 47%;
+        margin-right: 2%;*/
+        width: 100%;
+        margin-right: 0;
+    }
+    .newslist__item_image {
+        width: 260px;
+        flex-shrink: 0;
+    }
+    .newslist__item_content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .newslist__item a{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: stretch;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .newslist__item_title {
+        font-size: 16px;
+    }
+
+    .newslist__item_image {
+        width: 200px;
+        flex-shrink: 0;
+    }
+}

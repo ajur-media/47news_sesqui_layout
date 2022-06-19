@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+    .topline {
+        background-color: #13825f;
+        color: #fff;
+        display: block;
+        height: 50px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        font-size: 15px;
+        z-index: 1000;
+    }
+    .topline__container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .district {
+        padding-top: 15px;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        /*align-items: center;
+        align-content: baseline;*/
+    }
+    .district__image {
+        margin-right: 10px;
+        height: 18px;
+    }
+    .dropdown {
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: baseline;
+        color: #fff;
+    }
+    .dropdown:hover {
+        color: #84f8c4;
+    }
+    .dropdown__button {
+        display: block;
+        width: 0;
+        height: 0;
+        border: solid 8px #fff;
+        border-bottom: none;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        margin: 8px 10px 5px;
+    }
+    .menu {
+        display: block;
+        padding-top: 14px;
+        margin-left: 20px;
+    }
+    .menu__item {
+        color: #fff;
+        margin-right: 10px;
+    }
+    .menu__item:hover {
+        color: #84f8c4;
+        border-bottom: solid 1px #84f8c466;
+    }
+    .search {
+        display: block;
+        align-self: flex-end;
+    }
+    .search-input {
+        height: 28px;
+        /*background-color: #0d5941;
+        color: #fff;
+        border:  solid 1px #fff;
+        padding: 0 5px;*/
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .search-input__field {
+        height: 28px;
+        background-color: #0d5941;
+        color: #fff;
+        border:  solid 1px #fff;
+        border-radius: 3px;
+        padding: 0 5px;
+    }
+    .search-input__field:active,
+    .search-input__field:focus {
+        border-color: #84f8c4;
+    }
+    .search-input__button {
+        color: transparent;
+        border: none;
+        width: 20px;
+        height: 26px;
+        background: url(../img/search.png) transparent no-repeat right center;
+        padding: 0;
+    }
+    .search-input__button:hover {
+        cursor: pointer;
+    }
+
+    .line {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        height: 106px;
+        border-bottom: 1px solid #dad9d9;
+        background-color: #fff;
+    }
+    .line__container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        /*align-content: center;
+        padding-top: 10px;*/
+    }
+    .logo_wrapper {
+        width: 25%;
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+    .age-restrictions_large {
+        font-size: 30px;
+        color: #13825f;
+        font-weight: 400;
+        position: relative;
+        top: -29px;
+        margin-left: 10px;
+    }
+    .social {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        /*align-items: center;*/
+        align-content: center;
+        max-width: 170px;
+        width: 30%;
+    }
+    .social__item {
+        margin-right: 5px;
+    }
+    .social__item_long {
+        flex-basis: 150px;
+        /*flex-grow: 2;*/
+    }
+    .social__item__icon{
+        width: 24px;
+        height: 24px;
+    }
+    .social__item_long .social__item__icon{
+        margin-right: 5px;
+    }
+    .social__item:hover .social__item__icon circle {
+        fill: #8c3b52;
+    }
+    .button_with-icon {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3px 10px 3px 5px;
+        color: #13825F;
+        background-color: #fff;
+        border: solid 1px #13825F;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+    .button_with-icon:hover {
+        background-color: #8c3b52;
+        border-color: #8c3b52;
+        color: #fff;
+    }
+    .currency {
+        font-size: 13px;
+        width: 15%;
+        margin-left: 10%;
+    }
+    .currency__headline {
+        color: #13825f;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+    .currency__item {
+        font-weight: 500;
+        color: #b5b5b5;
+    }
+    .currency__value {
+        color: #919191;
+    }
+    .weather {
+        font-size: 13px;
+    }
+    .weather__region {
+        color: #13825f;
+        font-weight: 500;
+        display: inline-block;
+        width: 200px;
+    }
+    .weather__temperature {
+        display: inline-block;
+        width: 20px;
+        text-align: right;
+        padding-right: 5px;
+        color: #8c3b52;
+        /*font-weight: 500;*/
+    }
+    .weather__icon {
+    }
+    .weather__image {
+         width: 18px;
+         position: relative;
+         top: 4px;
+    }
+
+/*------------------------------------*\
+    # BREAKPOINTS
+\*------------------------------------*/
+@media screen and (max-width: 1000px) {
+    .topline {
+        font-size: 13px;
+        height: 70px;
+    }
+    .line {
+        margin-top: 70px;
+    }
+    .logo-image {
+        height: 60px;
+    }
+    .age-restrictions_large {
+        font-size: 27px;
+        top: -23px;
+        margin-left: 5px;
+    }
+    .social__item__icon{
+        width: 20px;
+        height: 20px;
+    }
+    .social {
+        margin-left: 20px;
+        width: 170px;
+    }
+    .currency {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .district__image {
+        position: relative;
+        top: 10px;
+    }
+    .dropdown {
+        width: 90px;
+    }
+    .search {
+        position: relative;
+        top: -6px;
+    }
+    .weather {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .dropdown {
+        width: 85px;
+    }
+    .logo-image {
+        height: 50px;
+    }
+    .weather {
+        margin-top: 0;
+    }
+    .weather__region {
+        width: 130px;
+    }
+    .weather__place {
+        display: none;
+    }
+    .age-restrictions_large {
+        font-size: 21px;
+        top: -20px;
+    }
+
+    .line__container {
+        padding-top: 10px;
+    }
+}

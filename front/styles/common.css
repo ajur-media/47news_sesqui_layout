@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*------------------------------------*\
+    # COMMON STYLES
+\*------------------------------------*/
+    .content-wrapper {
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .text_small {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .button {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: baseline;
+        padding: 10px 30px;
+        background-color: #3bae7c;
+        color: #fff;
+        border: 2px solid #3bae7c;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+    .button:hover {
+        cursor: pointer;
+        background-color: #8c3b52;;
+        color: #fff;
+        border-color: #8c3b52;
+    }
+    .body__ad {
+        margin: 20px auto 30px;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ad_banner {
+        width: 100%;
+    }
+    .placeholder {
+        border: 1px solid #aaa;
+        background-color: #8c3b5233;
+        height: 200px;
+    }
